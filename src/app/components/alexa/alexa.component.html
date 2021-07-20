@@ -1,0 +1,19 @@
+<div class="cont-chat d-flex flex-column justify-content-between">
+    <div #chatContainer>
+        <p *ngIf="alexaMsg !== '' ">{{alexaMsg}}</p>
+    </div>
+    <div>
+        <div class="d-flex justify-content-center mb-2" *ngIf="showButtons">
+            <button *ngIf="buttonMeteo" class="bg-success btn" (click)='showMeteo()'>Mostra il meteo di oggi</button>
+            <button *ngIf="buttonDates" class="bg-success btn" (click)='showDates()'>Mostra i miei appuntamenti</button>
+            <button *ngIf="buttonNews" class="bg-success btn" (click)='showNews()'>Mostra le news più importanti</button>
+        </div>
+        <p class="tr p-3" *ngIf="answering=== true">sta scrivendo...</p>
+        <div class="d-flex ">
+            <input [(ngModel)]="message" type="text">
+            <button (click)='sendMsg()' class="bg-primary btn" type="submit">invia</button>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,24 @@
+
+<div class="cont-chat d-flex flex-column justify-content-between">
+    <div>
+        <p *ngIf="alexa1 !== '' ">{{alexa1}}</p>
+        <p class="tr" *ngIf="answ1 !== '' ">{{answ1}}</p>
+        <p *ngIf="alexa2 !== '' ">{{alexa2}}</p>
+        <p class="tr" *ngIf="answ2 !== '' ">{{answ2}}</p>
+        <p *ngIf="alexa3 !== '' ">{{alexa3}}</p>
+        <p class="tr" *ngIf="answ3 !== '' ">{{answ3}}</p>
+        <p *ngIf="alexa4 !== '' ">{{alexa4}}</p>
+        <p *ngIf="alexa5 !== '' ">{{alexa5}}</p>
+        <p class="tr" *ngIf="answ4 !== '' ">{{answ4}}</p>
+        <p *ngIf="alexa6 !== '' ">{{alexa6}}</p>
+        <p *ngIf="alexa7 !== '' ">{{alexa7}}</p>
+        <p class="tr" *ngIf="answ5 !== '' ">{{answ5}}</p>
+    </div>
+    <div>
+        <p class="tr p-3" *ngIf="answering=== true">sta scrivendo...</p>
+        <div class="d-flex ">
+            <input [(ngModel)]="message" type="text">
+            <button (click)='sendMsg()' class="bg-primary btn" type="submit">invia</button>
+        </div>
+    </div>
+</div> 

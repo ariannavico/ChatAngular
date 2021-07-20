@@ -1,0 +1,25 @@
+<div class="cont-chat d-flex flex-column justify-content-between">
+    <div>
+        <p *ngIf="leonardo1 !== '' ">{{leonardo1}}</p>
+        <p class="tr" *ngIf="answ1 !== '' ">{{answ1}}</p>
+        <p *ngIf="leonardo2 !== '' ">{{leonardo2}}</p>
+        <p class="tr" *ngIf="answ2 !== '' ">{{answ2}}</p>
+        <p *ngIf="leonardo3 !== '' ">{{leonardo3}}</p>
+        <p class="tr" *ngIf="answ3 !== '' ">{{answ3}}</p>
+        <p *ngIf="leonardo4 !== '' ">{{leonardo4}}</p>
+        <p *ngIf="leonardo5 !== '' ">{{leonardo5}}</p>
+        <p class="tr" *ngIf="answ4 !== '' ">{{answ4}}</p>
+        <p *ngIf="leonardo6 !== '' ">{{leonardo6}}</p>
+        <p *ngIf="leonardo7 !== '' ">{{leonardo7}}</p>
+        <p class="tr" *ngIf="answ5 !== '' ">{{answ5}}</p>
+    </div>
+    <div>
+        <p class="tr p-3" *ngIf="answering=== true">sta scrivendo...</p>
+        <div class="d-flex ">
+            <input [(ngModel)]="message" type="text">
+            <button (click)='sendMsg()' class="bg-primary btn" type="submit">invia</button>
+        </div>
+    </div>
+
+
+</div>
